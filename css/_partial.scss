@@ -1,0 +1,17 @@
+/* Variabler */ 
+
+$bg-color: #ffffff; 
+$primary-color: #0133FF;
+$secondary-color: #FFFEE3;
+$text-color: #0133FF;
+
+/* Mixins */ 
+
+@mixin cta-btn {
+    background-color: $primary-color;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}

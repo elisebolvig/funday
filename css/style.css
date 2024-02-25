@@ -1,0 +1,34 @@
+/* Variabler */
+/* Mixins */
+/* General styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Forside styling 
+header {
+  height: 10vh;
+  background-color: #0133FF;
+}
+header img {
+  padding: 1vh;
+  height: 9vh;
+}
+
+.hero .img-hero {
+  height: 90vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .pil {
+  height: 10vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -15vh;
+}/*# sourceMappingURL=style.css.map */
