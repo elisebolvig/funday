@@ -21,6 +21,10 @@ Huskliste til koden:
 - referencer til billede 
 - animationer 
 
+Spørgsmål: 
+- Hvad skal stå i SCSS og hvad skal stå i CSS?
+- Hvorfor virker variablerne ikke?
+
 -->
 
 
@@ -30,8 +34,29 @@ Huskliste til koden:
 <body>
     <header>
         <!--Navigation-->
+        <!--<nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo af virksomheden FUNDAY" class="logo"></a>
+            <div class="ikon-container">
+                <a href="#"><img src="img/telefon.png" alt="Menu ikon" class="ikon"></a>
+                <a href="#"><img src="img/mail.png" alt="Menu ikon" class="ikon"></a>
+                <a href="#"><img src="img/Menu.png" alt="Menu ikon" class="ikon"></a>
+            </div>
+        </nav> !-->
+
         <nav>
-            <a href="index.html"><img src="img/logo.png" alt="logo af virksomheden FUNDAY"></a>
+            <a href="index.html"><img src="img/logo.png" alt="logo af virksomheden FUNDAY" class="logo"></a>
+            <div class="ikon-container">
+                <a href="#"><img src="img/telefon.png" alt="Telefon ikon" class="ikon"></a>
+                <a href="#"><img src="img/mail.png" alt="Mail ikon" class="ikon"></a>
+                <div class="dropdown">
+                    <a href="#"><img src="img/Menu.png" alt="Menu ikon" class="ikon"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="omos.html">Om Funday</a></li>
+                        <li><a href="cases.html">Nyeste Cases</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
