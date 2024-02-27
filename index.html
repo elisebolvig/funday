@@ -8,13 +8,13 @@
     <link href="https://fonts.cdnfonts.com/css/amstelvaralpha" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/hey-august" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/billie-eilish" rel="stylesheet">
 </head>
 
 <!--
 
 Huskliste til koden: 
 
-- færdiggøre header med dropdown menu
 - husk at lave aktive links 
 - husk meta description 
 - husk aktiv telefonnummer + mail i footer 
@@ -46,14 +46,16 @@ Spørgsmål:
         <nav>
             <a href="index.html"><img src="img/logo.png" alt="logo af virksomheden FUNDAY" class="logo"></a>
             <div class="ikon-container">
-                <a href="#"><img src="img/telefon.png" alt="Telefon ikon" class="ikon"></a>
-                <a href="#"><img src="img/mail.png" alt="Mail ikon" class="ikon"></a>
+                <a href="tel:+4512345678"><img src="img/telefon.png" alt="Telefon ikon" class="ikon"></a>
+                <a href="mailto:hello@funday.com"><img src="img/mail.png" alt="Mail ikon" class="ikon"></a>
                 <div class="dropdown">
-                    <a href="#"><img src="img/Menu.png" alt="Menu ikon" class="ikon"></a>
+                    <a href="index.html"><img src="img/Menu.png" alt="Menu ikon" class="ikon"></a>
                     <ul class="dropdown-menu">
                         <li><a href="index.html">Forside</a></li>
                         <li><a href="omos.html">Om Funday</a></li>
                         <li><a href="cases.html">Nyeste Cases</a></li>
+                        <li><a href="omos.html">Services</a></li>
+                        <li><a href="#min-footer">Kontakt os</a></li>
                     </ul>
                 </div>
             </div>
@@ -149,7 +151,7 @@ Spørgsmål:
             </div>            
         </section>
     </main>
-    <footer>
+    <footer id="min-footer">
 
         <div class="kontakt">
             <p>Kontakt</p>
@@ -158,8 +160,8 @@ Spørgsmål:
             <p>0000 POSTNUMMER</p>
             <p>CVR NUMMER 00112233</p>
             <br>
-            <p>TELEFON: +45 23244232</p>
-            <p>EMAIL: HELLO@FUNDAY.DK</p>
+            <a href="tel:+4512345678"><p>TELEFON: +45 23244232</p></a>
+            <a href="mailto:hello@funday.com"><p>EMAIL: HELLO@FUNDAY.DK</p></a>
         </div>
 
         <img class="logo-type "src="img/LOGO_TYPE.png" alt="logo">
