@@ -237,43 +237,316 @@ max-width: 100vw;
         }
     }
 
-    .cta-btn{ /* FÅ PARTIAL TIL AT VIRKE*/
-        background-color: #0133FF;
-        border-radius: 50px;
-        padding: 10px 40px;
+.cta-btn{ /* FÅ PARTIAL TIL AT VIRKE*/
+    background-color: #0133FF;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-family: 'Barlow', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+
+}
+
+.cta-wrapper{
+    margin: 15vh 0 5vh 0;
+    justify-items: center;
+}
+
+.cases-container{
+    position: relative;
+    text-align: center;
+    padding: 10vh 0;
+
+        h2{
+            font-family: 'Billie Eilish', sans-serif;
+            font-size: 90px;
+            font-weight:lighter;
+            letter-spacing: 3px;
+        }
+
+        h3{
+            font-family: 'Barlow', sans-serif;
+            font-size: 120px;
+            margin-top: -40px;
+        }
+
+        .cases-title-wrapper{
+            display: flex;
+            justify-content: center;
+            gap: 5vw;
+            flex-wrap: wrap; /* Elementer hopper til næste linje, hvis de ikke kan passe */
+        }
+
+        .smiley{
+            height: 50vh;
+            width: auto;
+            margin-top: 12vh;
+        }
+
+        .img-container{
+            display: flex;
+            gap: 10vw;
+            margin-top: -20vh;
+            overflow: hidden;
+        }
+
+        .case-1{
+            height: 580px;
+            width: auto;
+            align-items: left;
+        }
+
+        .case-2{
+            height: 822px;
+            width: auto;
+            align-items: right;
+            margin-top: 30vh;
+        }
+
+        .case-3{
+            height: 720px;
+            width: auto;
+            align-items: left;
+            margin-top: -20vh;
+        }
+
+        .case-4{
+            height: 450px;
+            width: auto;
+            align-items: right;
+            margin-top: 30vh;
+        }
+
+        .case-5{
+            height: 736px;
+            width: auto;
+            align-items: left;
+            margin-top: 20vh;
+        }
+
+        .case-6{
+            height: 572px;
+            width: auto;
+            align-items: right;
+            margin-top: 30vh;
+        }
+}
+
+.slogan-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20vh;
+    flex-wrap: wrap; /* Elementer hopper til næste linje, hvis de ikke kan passe */
+    
+
+        img{
+            height: 60vh;
+            width: 60vh;
+        }
+
+        h2{
+            font-family: 'Billie Eilish', sans-serif;
+            font-size: 80px;
+            font-weight: lighter;
+            letter-spacing: 3px;
+        }
+
+        h3{
+            font-family: 'Hey August', sans-serif;
+            font-size: 120px;
+        }
+
+        p{
+            font-family: 'Barlow', sans-serif;
+            margin-top: 5vh;
+        }
+}
+
+.text-container{
+    background-color: #FFFEE3;
+    padding: 10vh;
+
+    p{
         font-family: 'Barlow', sans-serif;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+}
+
+.banner-2-container {
+    overflow: hidden; /* Sørg for at tekstbannerelementet kun vises inden for containerens grænser */
+    margin: 30vh 0 10vh 0;
+    }
+    
+    .banner-2-text {
+    white-space: nowrap; /* Forhindrer tekst i at wrappe */
+    animation: slide 15s linear infinite; 
+    text-transform: uppercase;
+    color: #0133FF;
+    font-family: 'Hey August', sans-serif;
+    font-size: 110px;
+    font-weight: 800;
+    }
+    
+    @keyframes slide {
+    0% {
+        transform: translateX(0%); /* Startposition: helt til højre */
+    }
+    100% {
+        transform: translateX(-100%); /* Slutposition: helt til venstre */
+    }
+    }
+
+footer{
+background-color: #0133FF;
+padding: 15vh 10vh 5vh 10vh;
+
+    .kontakt{
+
+        p{
         color: #fff;
         text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 600;
-        font-style: italic;
-        text-decoration: none;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-left: 40vw;
+        }
+    }
+
+    .logo-type{
+        margin: 15vh 0;
+        width: 100%;
+    }
+
+    .links-container{
+        display: flex;
+        margin-top: 10vh;
+        flex-wrap: wrap; /* Elementer hopper til næste linje, hvis de ikke kan passe */
+
+        p{
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 200;
+            line-height: 1.2;
+            font-size: 20px;
+        }
+
+        .links-wrapper{
+            display: flex;
+            gap: 60px;
+            margin-left: auto; /* Højrestil links-wrapper */
+
+        }
+
+        img{
+            height: 45px;
+            width: auto;
+
+        }
+    }
+
+}
+
+
+/* Om os */
+
+{
+    .sektion-omos-introduktion{
+        background-image: url(../img/baggrundsbillede.jpg);
+        
+    }
+}
+
+
+
+/************ Mobil **************/
+
+
+@media screen and (max-width: 900px){
+
+    /* HEADER */
+
+    #mail, #telefon{
+        display: none;
+    }
+
+    .dropdown-menu {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    nav{
+
+        div ul li a{
+            font-weight: 500;
+            font-size: 20px;
+        }
 
     }
 
-    .cta-wrapper{
-        margin: 15vh 0 5vh 0;
-        justify-items: center;
-    }
+    /* SEKTION: Introduktions-teaser */
 
-    .cases-container{
-        position: relative;
-        text-align: center;
-        padding: 10vh 0;
-
-            h2{
+    .introduction-container{
+        padding-left: 20vw; 
+        max-width: 100vw;
+        
+            h1{
                 font-family: 'Billie Eilish', sans-serif;
-                font-size: 90px;
-                font-weight:lighter;
+                font-size: 40px;
+                font-weight: lighter;
                 letter-spacing: 3px;
+                                                        
             }
-
-            h3{
+        
+            h2{
+                font-family: 'Hey August', sans-serif;
+                font-size: 40px;
+            }
+        
+            p{
                 font-family: 'Barlow', sans-serif;
-                font-size: 120px;
-                margin-top: -40px;
+                text-transform: uppercase;
+                font-size: 16px;
+                margin-top: 5vh;
             }
+        }
 
+    .hvad-kan-vi-container{
+        padding: 5vh 5vh;
+    
+    
+            h3{
+                font-size: 35px;   
+            }
+    
+            h4{
+                font-size: 50px;
+                font-weight: 200;
+            }
+    
+            p{
+                font-size: 25px;
+            }
+        }
+
+        .cases-container{
+        
+                h2{
+                    font-size: 70px;
+                }
+        
+                h3{
+                    font-size: 80px;
+                    margin-top: -40px;
+                }
+        
             .cases-title-wrapper{
                 display: flex;
                 justify-content: center;
@@ -282,182 +555,114 @@ max-width: 100vw;
             }
 
             .smiley{
-                height: 50vh;
-                width: auto;
-                margin-top: 12vh;
-            }
-
-            .img-container{
-                display: flex;
-                gap: 10vw;
-                margin-top: -20vh;
+                height: 40vh;
+                margin-top: 2vh;
+                position: relative;
+                right: -30%;
                 overflow: hidden;
             }
 
-            .case-1{
-                height: 580px;
-                width: auto;
-                align-items: left;
-            }
-
-            .case-2{
-                height: 822px;
-                width: auto;
-                align-items: right;
-                margin-top: 30vh;
-            }
-
-            .case-3{
-                height: 720px;
-                width: auto;
-                align-items: left;
-                margin-top: -20vh;
-            }
-
-            .case-4{
-                height: 450px;
-                width: auto;
-                align-items: right;
-                margin-top: 30vh;
-            }
-
-            .case-5{
-                height: 736px;
-                width: auto;
-                align-items: left;
-                margin-top: 20vh;
-            }
-
-            .case-6{
-                height: 572px;
-                width: auto;
-                align-items: right;
-                margin-top: 30vh;
-            }
-    }
-
-    .slogan-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20vh;
-        flex-wrap: wrap; /* Elementer hopper til næste linje, hvis de ikke kan passe */
-        
-
-            img{
-                height: 60vh;
-                width: 60vh;
-            }
-
-            h2{
-                font-family: 'Billie Eilish', sans-serif;
-                font-size: 80px;
-                font-weight: lighter;
-                letter-spacing: 3px;
-            }
-
-            h3{
-                font-family: 'Hey August', sans-serif;
-                font-size: 120px;
-            }
-
-            p{
-                font-family: 'Barlow', sans-serif;
+            .img-container{
                 margin-top: 5vh;
+                overflow: hidden;
             }
-    }
-
-    .text-container{
-        background-color: #FFFEE3;
-        padding: 10vh;
-
-        p{
-            font-family: 'Barlow', sans-serif;
-            font-size: 40px;
-            line-height: 1.2;
         }
-    }
 
-    .banner-2-container {
-        overflow: hidden; /* Sørg for at tekstbannerelementet kun vises inden for containerens grænser */
-        margin: 30vh 0 10vh 0;
-      }
-      
-      .banner-2-text {
-        white-space: nowrap; /* Forhindrer tekst i at wrappe */
-        animation: slide 15s linear infinite; 
-        text-transform: uppercase;
-        color: #0133FF;
-        font-family: 'Hey August', sans-serif;
-        font-size: 110px;
-        font-weight: 800;
-      }
-      
-      @keyframes slide {
-        0% {
-          transform: translateX(0%); /* Startposition: helt til højre */
-        }
-        100% {
-          transform: translateX(-100%); /* Slutposition: helt til venstre */
-        }
-      }
-
-      footer{
-        background-color: #0133FF;
-        padding: 15vh 10vh 5vh 10vh;
+        .slogan-container{
         
-            .kontakt{
-
-                p{
-                color: #fff;
-                text-transform: uppercase;
-                font-family: 'Barlow', sans-serif;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 1.2;
-                margin-left: 40vw;
-                }
-            }
-
-            .logo-type{
-                margin: 15vh 0;
-                width: 100%;
-            }
-
-            .links-container{
-                display: flex;
-                margin-top: 10vh;
-                flex-wrap: wrap; /* Elementer hopper til næste linje, hvis de ikke kan passe */
-
-                p{
-                    color: #fff;
-                    text-transform: uppercase;
-                    font-family: 'Barlow', sans-serif;
-                    font-weight: 200;
-                    line-height: 1.2;
-                    font-size: 20px;
-                }
-
-                .links-wrapper{
-                    display: flex;
-                    gap: 60px;
-                    margin-left: auto; /* Højrestil links-wrapper */
-
-                }
-
                 img{
-                    height: 45px;
-                    width: auto;
-
+                    height: 50vh;
+                    width: 50vh;
+                    margin: 5vh 0 10vh 0;
                 }
+        
+                h2{
+                    font-size: 70px;
+                    margin: 0 5vh;
+                    line-height: 1.2;
+                }
+        
+                h3{
+                    font-size: 80px;
+                    margin: 0 5vh;
+                    font-weight: lighter;
+                }
+        
+                p{
+                    margin: 5vh;
+                }
+        }
+
+        .text-container{
+            padding: 10vh 5vh;
+        
+            p{
+                font-size: 30px;
+                line-height: 1.2;
             }
+        }
+
+        footer{
+            padding: 15vh 0 5vh 0;
+            width: 100vw;
+            
+                .kontakt{
+            
+                    p{
+                    font-size: 18px;
+                    margin-left: 10vw;
+                    }
+                }
+            
+                .logo-type{
+                    margin: 25vh 10vw 0 10vw;
+                    width: 80vw;  
+                }
+            
+                .links-container{
+                    margin-top: 0;
+            
+                    p{
+                        font-size: 16px;
+                        width: 80vw;
+                        margin: 5vh 10vw 15vh 10vw;
+                    }
+            
+                    .links-wrapper{
+                        display: flex;
+                        gap: 3em;
+                        margin: auto; /* Højrestil links-wrapper */
+            
+                    }
+            
+                    img{
+                        height: 34px;
+                        width: auto;
+            
+                    }
+                }
+            
+            }
+        
+
+        
+
+
     
-      }
 
 
-      
 
-      
+
+}
+
+
+
+
+    
+
+    
+
+    
 
 
 
