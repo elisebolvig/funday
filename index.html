@@ -15,9 +15,8 @@
 
 Huskliste til koden: 
 
-- husk at lave aktive links 
-- husk meta description 
-- husk aktiv telefonnummer + mail i footer 
+- husk at lave aktive links (Tjek igennem)
+- husk meta description + det robot et eller andet fra Nicolas' time
 - referencer til billede 
 - animationer 
 
@@ -34,20 +33,12 @@ Spørgsmål:
 <body>
     <header>
         <!--Navigation-->
-        <!--<nav>
-            <a href="index.html"><img src="img/logo.png" alt="logo af virksomheden FUNDAY" class="logo"></a>
-            <div class="ikon-container">
-                <a href="#"><img src="img/telefon.png" alt="Menu ikon" class="ikon"></a>
-                <a href="#"><img src="img/mail.png" alt="Menu ikon" class="ikon"></a>
-                <a href="#"><img src="img/Menu.png" alt="Menu ikon" class="ikon"></a>
-            </div>
-        </nav> !-->
 
         <nav>
             <a href="index.html"><img src="img/logo.png" alt="logo af virksomheden FUNDAY" class="logo"></a>
             <div class="ikon-container">
-                <a href="tel:+4512345678"><img src="img/telefon.png" alt="Telefon ikon" class="ikon"></a>
-                <a href="mailto:hello@funday.com"><img src="img/mail.png" alt="Mail ikon" class="ikon"></a>
+                <a href="tel:+4512345678"><img src="img/telefon.png" alt="Telefon ikon" class="ikon" id="telefon"></a>
+                <a href="mailto:hello@funday.com"><img src="img/mail.png" alt="Mail ikon" class="ikon" id="mail"></a>
                 <div class="dropdown">
                     <a href="index.html"><img src="img/Menu.png" alt="Menu ikon" class="ikon"></a>
                     <ul class="dropdown-menu">
@@ -63,15 +54,24 @@ Spørgsmål:
 
     </header>
     <main>
+
+        <!--Sektion 1: Hero -->
+
         <section class="hero">
             <img src="img/hero.png" alt="animation" class="img-hero">
             <a class="pil" href=""><img src="img/Pil.png" alt="pil"></a>
         </section>
+    
+        <!--Sektion 2: Introduktion til Funday -->
+
         <section class="introduction-container">
             <h1>Mangler du<br>lidt kant?</h1> <!--Må man dele sætningen op i forhold til SEO?-->
             <h2>Vi sætter <br> kulør <br> på <br> dit <br>erhverv</h2>
             <p>Vi er multimediedesignere for dig</p>
         </section>
+
+        <!--Sektion 3: Introduktion til teamet bag Funday -->
+        
         <section class="introduction-funday-container">
             <div>
                 <img src="img/Caroline.jpg" alt="Billede af Caroline">
@@ -83,6 +83,9 @@ Spørgsmål:
                 <a class="cta-btn" href="#">Mere om os</a>
             </div>
         </section>
+
+        <!--Sektion 4: Animeret banner -->
+
         <section>
             <div class="banner-container">
                 <div class="banner-text">
@@ -90,6 +93,9 @@ Spørgsmål:
                 </div>
             </div>            
         </section>
+
+        <!--Sektion 5: Introduktion til Funday's services -->
+
         <section class="hvad-kan-vi-container">
             <h3>Hvad kan vi?</h3>
             <h4> En hel del hvis du spørger os</h4>
@@ -105,6 +111,9 @@ Spørgsmål:
                 <a class="cta-btn" href="#">Læs mere</a>
             </div>
         </section>
+
+        <!--Sektion 6: Nyeste cases -->
+
         <section class="cases-container">
             <div class="cases-title-wrapper">
                 <div>
@@ -130,6 +139,9 @@ Spørgsmål:
                 <a class="cta-btn" href="#">Se mere</a>
             </div>
         </section>
+
+        <!--Sektion 7: Slogan med smiley-animation -->
+
         <section>
             <div class="slogan-container">
                 <img src="img/Smiley.png" alt="smiley">
@@ -140,9 +152,15 @@ Spørgsmål:
                 </div>
             </div>
         </section>
+
+        <!--Sektion 8: Teaser for virksomheden + søgeordsoptimerende tekst -->
+
         <section class="text-container">
             <p>Vi er en lille gruppe kvinder, der forsøger at overtage verdensherredømmet, én virksomhed ad gangen. Vi specialiserer os i ikke at have ét speciale, hvilket også er grunden til at vi arbejder med virksomheder i alle størrelser. På tværs af mange industrier. I hele Danmark. </p>
         </section>
+
+        <!--Sektion 9: Animeret banner -->
+
         <section>
             <div class="banner-2-container">
                 <div class="banner-2-text">
@@ -151,6 +169,9 @@ Spørgsmål:
             </div>            
         </section>
     </main>
+
+    <!-- Footer -->
+
     <footer id="min-footer">
 
         <div class="kontakt">

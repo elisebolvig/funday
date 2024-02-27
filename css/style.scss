@@ -455,14 +455,163 @@ padding: 15vh 10vh 5vh 10vh;
 }
 
 
-/* Om os */
+/* NY SIDE: styling for omos.html */
 
-{
-    .sektion-omos-introduktion{
-        background-image: url(../img/baggrundsbillede.jpg);
+.sektion-omos-introduktion{
+    background: url(../img/baggrundsbillede.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 51vh;
+    object-fit: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centrer lodret */
+    justify-content: center; /* Centrer vandret */
+    
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+
+        h1{
+            font-family: 'Billie Eilish', sans-serif;
+            font-size: 90px;
+            font-weight:lighter;
+            letter-spacing: 3px;
+
+        }
+
+        h2{
+            font-family: 'Hey August', sans-serif;
+            font-size: 90px;
+            margin-left: 10px;
+        }
+
         
+ }
+
+ .omos-praesentation{
+
+    p{
+        font-family: 'barlow';
+        width: 60vw;
+        text-align: left;
+        font-size: 25px;
+        margin: 15vh 10vw;
     }
-}
+
+    .billede1, .billede2, .overlay{
+        width: 461px;
+        height: 344px;
+
+    }
+
+    .omos-img-wrapper{
+        display: flex;
+        margin: 10vh 5vw;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Elementer hopper til næste linje, hvis de ikke kan passe */
+
+        div{
+            position: relative;
+            display: inline-block;
+        }
+
+        div img:hover {
+            opacity: 1; /* Vis billedet ved hover */
+        }
+    }
+
+    .billede2{
+        margin-top: 20vh;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; /* Start med at skjule begge billeder */
+        transition: opacity 0.3s ease; /* Tilføj en overgangseffekt for en glat overgang*/
+    }
+ }
+
+ .sektion-alt-det-vi-kan{
+    background-color: #FFFEE3;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    margin: 30vh 0;
+    
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            margin-top: -100vh;
+        }
+
+        h2{
+            font-family: 'Billie Eilish', sans-serif;
+            font-size: 90px;
+            font-weight:lighter;
+            letter-spacing: 3px;
+
+        }
+
+        h3{
+            font-family: 'Hey August', sans-serif;
+            font-size: 90px;
+            margin-left: 10px;
+            font-weight: lighter;
+        }   
+ }
+
+ .sektion-bliv-en-af-os{
+    width: 100vw;
+    height: 100vh;
+    margin: 30vh 0 -30vh 0;
+    padding: 0 20vw;
+    
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2{
+            font-family: 'Billie Eilish', sans-serif;
+            font-size: 90px;
+            font-weight:lighter;
+            letter-spacing: 3px;
+
+        }
+
+        h3{
+            font-family: 'Hey August', sans-serif;
+            font-size: 90px;
+            margin-left: 10px;
+            font-weight: lighter;
+        }   
+
+        p{
+            width: 60vw;
+            font-family: 'barlow';
+            text-align: left;
+            font-size: 18px;
+            margin-top: 10vh;
+        }
+
+
+        
+ }
+ 
+
 
 
 
