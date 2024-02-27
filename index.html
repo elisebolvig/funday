@@ -23,6 +23,7 @@ Huskliste til koden:
 Spørgsmål: 
 - Hvad skal stå i SCSS og hvad skal stå i CSS?
 - Hvorfor virker variablerne ikke?
+– Hvorfor vil samme indstilling for cta ikke virke? 
 
 -->
 
@@ -43,9 +44,9 @@ Spørgsmål:
                     <a href="index.html"><img src="img/Menu.png" alt="Menu ikon" class="ikon"></a>
                     <ul class="dropdown-menu">
                         <li><a href="index.html">Forside</a></li>
-                        <li><a href="omos.html">Om Funday</a></li>
+                        <li><a href="omos.html">Om os</a></li>
                         <li><a href="cases.html">Nyeste Cases</a></li>
-                        <li><a href="omos.html">Services</a></li>
+                        <li><a href="omos.html#sektion-alt-det-vi-kan">Services</a></li>
                         <li><a href="#min-footer">Kontakt os</a></li>
                     </ul>
                 </div>
@@ -74,13 +75,20 @@ Spørgsmål:
         
         <section class="introduction-funday-container">
             <div>
-                <img src="img/Caroline.jpg" alt="Billede af Caroline">
-                <img src="img/Caroline.jpg" alt="Billede af Caroline">
-                <img src="img/Caroline.jpg" alt="Billede af Caroline">
-                <img src="img/Caroline.jpg" alt="Billede af Caroline">
+                <div>
+                    <div class="kolonne">
+                        <h3>Her er vi!</h3>
+                        <img src="img/Caroline.jpg" alt="Billede af Caroline">
+                    </div>
+                    <img src="img/Caroline.jpg" alt="Billede af Caroline">
+                </div>
+                <div>
+                    <img src="img/Caroline.jpg" alt="Billede af Caroline">
+                    <img src="img/Caroline.jpg" alt="Billede af Caroline" class="billede-2">
+                </div>
             </div>
             <div>
-                <a class="cta-btn" href="#">Mere om os</a>
+                <a class="cta-btn" href="omos.html">Mere om os</a>
             </div>
         </section>
 
@@ -108,7 +116,7 @@ Spørgsmål:
                 <p>& meget mere...</p>
             </div>
             <div class="cta-wrapper">
-                <a class="cta-btn" href="#">Læs mere</a>
+                <a class="cta-btn" href="omos.html#sektion-alt-det-vi-kan">Læs mere</a>
             </div>
         </section>
 
@@ -136,7 +144,7 @@ Spørgsmål:
             </div>
 
             <div class="cta-wrapper">
-                <a class="cta-btn" href="#">Se mere</a>
+                <a class="cta-btn" href="cases.html">Se mere</a>
             </div>
         </section>
 
