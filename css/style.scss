@@ -715,9 +715,100 @@ padding: 15vh 10vh 5vh 10vh;
   /* NY SIDE: Styling af ? */
 
 .case-sektion-1{
-    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+    h1, p{
+        font-family: 'Barlow', sans-serif;
+        color: black;
+    }
+
+    h1{
+        font-weight: 600;
+    }
+
+    p{
+        max-width: 60vw;
+        margin-top: 5vh;
+    }
+
+    div{
+        margin: 10vh 5vh 10vh 5vh;
+    }
+
+    img{
+        width: 350px;
+    }
 }
 
+.full-width-img{
+    width: 100vw;
+    height: auto;
+}
+
+.case-produkter-sektion-2{
+
+    h2, p{
+        font-family: 'Barlow', sans-serif;
+        color: black;
+    }
+
+    h2{
+        font-weight: 400;
+        font-size: 80px;
+        margin: 10vh 5vw 10vh 20vw;
+        text-transform: initial;
+    }
+
+    img{
+        width: 80vw;
+        justify-items: right;
+        margin-left: 20vw;
+    }
+
+    p{
+        margin: 10vh 5vw 10vh 25vw;
+        font-size: 30px;
+        line-height: 1.5;
+    }
+        
+}
+
+.case-produkter-sektion-3{
+
+    div{
+        display: flex;
+        gap: 2vw;
+        margin: 2vw 25vw 10vh 0;
+
+            img{
+                width: 35vw;
+            }
+    }
+
+    .citat{
+        width: 20vw;
+        margin: 5vh 43vw 10vh 37vw;
+    }
+
+    .img-right{
+        width: 80vw;
+        justify-items: right;
+        margin-left: 20vw;
+    }
+
+    .img-left{
+        width: 80vw;
+        justify-items: left;
+        margin-right: 20vw;
+        margin: 10vh 0;
+    }
+}
+
+#extra-space-50vh{
+    margin-bottom: 50vh;
+}
 
 
 
@@ -925,6 +1016,75 @@ padding: 15vh 10vh 5vh 10vh;
                 }
             
             }
+
+        /* NY SIDE: Styling af  */
+
+        .case-sektion-1{
+
+            p{
+                max-width: 80vw;
+            }
+
+            div{
+                margin: 2.5vh 5vh 2.5vh 5vh;
+            }
+
+            img{
+                width: 60vw;
+                margin-bottom: 5vh;
+            }
+        }
+
+
+        .case-produkter-sektion-2{
+
+
+            h2{
+                font-size: 35px;
+            }
+
+            img{
+                width: 100vw;
+                margin-left: 0;
+            }
+
+            p{
+                margin: 10vh 20vw 10vh 20vw;
+                font-size: 18px;
+                line-height: 2;
+            }
+                
+        }
+
+        .case-produkter-sektion-3{
+
+            div{
+                display: block;
+        
+                    img{
+                        width: 100vw;
+                    }
+            }
+
+            .citat{
+                width: 80vw;
+                margin: 5vh 10vw
+            }
+
+            .img-right{
+                width: 100vw;
+                margin-left: 0;
+            }
+
+            .img-left{
+                width: 100vw;
+                margin: 0;
+            }
+
+
+
+
+}
         
 }
 
