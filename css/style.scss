@@ -8,18 +8,15 @@
     margin: 0;
 }
 
-body{  
-        p{
-            font-size: 18px;
-            color: #0133FF;
-            line-height: 1.5;
-        }
+p{
+    font-size: 18px;
+    color: partial.$primary-color;
+    line-height: 1.5;
+}
 
-        h1, h2, h3, h4, h5, h6{
-            color: $primary-color;
-            color: #0133FF;
-            text-transform: uppercase;
-        }
+h1, h2, h3, h4, h5, h6{
+    color: partial.$primary-color;
+    text-transform: uppercase;
 }
 
 /* Forside styling */
@@ -27,7 +24,7 @@ body{
 header {
     display: flex;
     height: 10vh;
-    background-color: #0133FF;
+    background-color: partial.$primary-color;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -49,7 +46,7 @@ nav {
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
-        font-family: 'Barlow', sans-serif;
+        font-family: partial.$font-barlow;
         font-weight: 700;
         font-size: 30px;
         margin-top: 10vh;
@@ -90,7 +87,7 @@ nav {
     right: -20px;
     width: 500px;
     height: 100vh;
-    background-color: #0133FF; 
+    background-color: partial.$primary-color; 
     padding: 0;
 }
 
@@ -101,8 +98,6 @@ nav {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-
-
 
 .hero{
 
@@ -128,20 +123,19 @@ padding-left: 30vw;
 max-width: 100vw;
 
     h1{
-        font-family: 'Billie Eilish', sans-serif;
+        font-family: partial.$font-billie;
         font-size: 90px;
         font-weight: lighter;
-        letter-spacing: 3px;
-                                                
+        letter-spacing: 3px;                                         
     }
 
     h2{
-        font-family: 'Hey August', sans-serif;
+        font-family: partial.$font-hey-august;
         font-size: 90px;
     }
 
     p{
-        font-family: 'Barlow', sans-serif;
+        font-family: partial.$font-barlow;
         text-transform: uppercase;
         font-size: 18px;
         margin-top: 10vh;
@@ -165,8 +159,7 @@ max-width: 100vw;
 
             .billede-2{
                 margin-top: 5vh;
-            }
-            
+            }  
         }
     }
 
@@ -174,7 +167,7 @@ max-width: 100vw;
         display: inline-block;
 
         h3{
-            font-family: 'Barlow', sans-serif;
+            font-family: partial.$font-barlow;
             font-weight: 800;
             font-size: 80px;
             margin-left: 5vh;
@@ -188,19 +181,6 @@ max-width: 100vw;
         object-fit: cover;
         margin: 5vh;
     }
-
-    a{
-        background-color: #0133FF;
-        border-radius: 50px;
-        padding: 10px 40px;
-        font-family: 'Barlow', sans-serif;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-style: italic;
-        text-decoration: none;
-        margin-top: 5vh;
-    }
 }
 
 .banner-container {
@@ -213,7 +193,7 @@ max-width: 100vw;
     animation: slide 15s linear infinite; /* Anvend animationen */
     text-transform: uppercase;
     color: #0133FF;
-    font-family: 'Barlow', sans-serif;
+    font-family: partial.$font-barlow;
     font-size: 110px;
     font-weight: 800;
   }
@@ -229,14 +209,14 @@ max-width: 100vw;
 
 
  .hvad-kan-vi-container{
-    background-color: #FFFEE3;
+    background-color: $secondary-color;
     padding: 10vh 0;
     position: relative;
     text-align: center;
 
 
         h3{
-            font-family: 'Barlow', sans-serif;
+            font-family: partial.$font-barlow;
             text-transform: uppercase;
             font-weight: 300;
             font-style: italic;
@@ -245,7 +225,7 @@ max-width: 100vw;
         }
 
         h4{
-            font-family: 'Hey August', sans-serif;
+            font-family: partial.$font-hey-august;
             text-transform: uppercase;
             font-size: 75px;
             margin-bottom: 10vh;
@@ -254,15 +234,15 @@ max-width: 100vw;
         p{
             text-transform: uppercase;
             font-size: 35px;
-            font-family: 'Billie Eilish', sans-serif;
+            font-family: partial.$font-billie;
             font-weight: lighter;
             margin: 2vh;
             letter-spacing: 3px;
         }
     }
-
-.cta-btn{ /* FÅ PARTIAL TIL AT VIRKE*/
-    background-color: #0133FF;
+/*
+.cta-btn{ 
+    background-color: partial.$primary-color;
     border-radius: 50px;
     padding: 10px 40px;
     font-family: 'Barlow', sans-serif;
@@ -272,20 +252,20 @@ max-width: 100vw;
     font-weight: 600;
     font-style: italic;
     text-decoration: none;
-    transition: transform 0.3s ease; /* Tilføj en overgangseffekt til transformationen */
+    transition: transform 0.3s ease; 
 
         &:hover{
-            transform: scale(1.1); /* Forstør knappen med 10% ved hover */
+            transform: scale(1.1);  
         }
 
-}
+} 
 
 .cta-wrapper{
     margin: 15vh 0 5vh 0;
     justify-items: center;
 
-    .cta-btn { /* FÅ PARTIAL TIL AT VIRKE*/
-        background-color: #0133FF;
+    .cta-btn { 
+        background-color: partial.$primary-color;
         border-radius: 50px;
         padding: 10px 40px;
         font-family: 'Barlow', sans-serif;
@@ -295,14 +275,14 @@ max-width: 100vw;
         font-weight: 600;
         font-style: italic;
         text-decoration: none;
-        transition: transform 0.3s ease; /* Tilføj en overgangseffekt til transformationen */
+        transition: transform 0.3s ease;
     
             &:hover{
-                transform: scale(1.1); /* Forstør knappen med 10% ved hover */
+                transform: scale(1.1); 
             }
     
     }
-}
+} */
 
 .cases-container{
     position: relative;
@@ -310,14 +290,14 @@ max-width: 100vw;
     padding: 10vh 0;
 
         h2{
-            font-family: 'Billie Eilish', sans-serif;
+            font-family: partial.$font-billie;
             font-size: 90px;
             font-weight:lighter;
             letter-spacing: 3px;
         }
 
         h3{
-            font-family: 'Barlow', sans-serif;
+            font-family: partial.$font-barlow;
             font-size: 120px;
             margin-top: -40px;
         }
@@ -398,29 +378,29 @@ max-width: 100vw;
         }
 
         h2{
-            font-family: 'Billie Eilish', sans-serif;
+            font-family: partial.$font-billie;
             font-size: 80px;
             font-weight: lighter;
             letter-spacing: 3px;
         }
 
         h3{
-            font-family: 'Hey August', sans-serif;
+            font-family: partial.$font-hey-august;
             font-size: 120px;
         }
 
         p{
-            font-family: 'Barlow', sans-serif;
+            font-family: partial.$font-barlow;
             margin-top: 5vh;
         }
 }
 
 .text-container{
-    background-color: #FFFEE3;
+    background-color: $secondary-color;
     padding: 10vh;
 
     p{
-        font-family: 'Barlow', sans-serif;
+        font-family: partial.$font-barlow;
         font-size: 40px;
         line-height: 1.2;
     }
@@ -435,8 +415,8 @@ max-width: 100vw;
     white-space: nowrap; /* Forhindrer tekst i at wrappe */
     animation: slide 15s linear infinite; 
     text-transform: uppercase;
-    color: #0133FF;
-    font-family: 'Hey August', sans-serif;
+    color: partial.$primary-color;
+    font-family: partial.$font-hey-august;
     font-size: 110px;
     font-weight: 800;
     }
@@ -459,7 +439,7 @@ padding: 15vh 10vh 5vh 10vh;
         p{
         color: #fff;
         text-transform: uppercase;
-        font-family: 'Barlow', sans-serif;
+        font-family: partial.$font-barlow;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -480,7 +460,7 @@ padding: 15vh 10vh 5vh 10vh;
         p{
             color: #fff;
             text-transform: uppercase;
-            font-family: 'Barlow', sans-serif;
+            font-family: partial.$font-barlow;
             font-weight: 200;
             line-height: 1.2;
             font-size: 20px;
@@ -499,7 +479,6 @@ padding: 15vh 10vh 5vh 10vh;
 
         }
     }
-
 }
 
 
@@ -525,7 +504,7 @@ padding: 15vh 10vh 5vh 10vh;
         }
 
         h1{
-            font-family: 'Billie Eilish', sans-serif;
+            font-family: partial.$font-billie;
             font-size: 90px;
             font-weight:lighter;
             letter-spacing: 3px;
@@ -533,7 +512,7 @@ padding: 15vh 10vh 5vh 10vh;
         }
 
         h2{
-            font-family: 'Hey August', sans-serif;
+            font-family: partial.$font-hey-august;
             font-size: 90px;
             margin-left: 10px;
         }   
@@ -542,7 +521,7 @@ padding: 15vh 10vh 5vh 10vh;
  .omos-praesentation{
 
     p{
-        font-family: 'barlow';
+        font-family: partial.$font-barlow;
         width: 60vw;
         text-align: left;
         font-size: 25px;
@@ -587,7 +566,7 @@ padding: 15vh 10vh 5vh 10vh;
  
 
  .sektion-alt-det-vi-kan{
-    background-color: #FFFEE3;
+    background-color: $secondary-color;
     width: 100vw;
     height: 100vh;
     text-align: center;
@@ -604,7 +583,7 @@ padding: 15vh 10vh 5vh 10vh;
         }
 
         h2{
-            font-family: 'Billie Eilish', sans-serif;
+            font-family: partial.$font-billie;
             font-size: 90px;
             font-weight:lighter;
             letter-spacing: 3px;
@@ -612,7 +591,7 @@ padding: 15vh 10vh 5vh 10vh;
         }
 
         h3{
-            font-family: 'Hey August', sans-serif;
+            font-family: partial.$font-hey-august;
             font-size: 90px;
             margin-left: 10px;
             font-weight: lighter;
@@ -633,7 +612,7 @@ padding: 15vh 10vh 5vh 10vh;
         }
 
         h2{
-            font-family: 'Billie Eilish', sans-serif;
+            font-family: partial.$font-billie;
             font-size: 90px;
             font-weight:lighter;
             letter-spacing: 3px;
@@ -641,7 +620,7 @@ padding: 15vh 10vh 5vh 10vh;
         }
 
         h3{
-            font-family: 'Hey August', sans-serif;
+            font-family: partial.$font-hey-august;
             font-size: 90px;
             margin-left: 10px;
             font-weight: lighter;
@@ -649,7 +628,7 @@ padding: 15vh 10vh 5vh 10vh;
 
         p{
             width: 60vw;
-            font-family: 'barlow';
+            font-family: partial.$font-barlow;
             text-align: left;
             font-size: 18px;
             margin-top: 10vh;
@@ -657,7 +636,7 @@ padding: 15vh 10vh 5vh 10vh;
  }
  
 
- /* Ny side: Styling af cases.html */
+ /* NY SIDE: Styling af cases.html */
 
  .sektion-cases-introduktion{
     position: relative;
@@ -674,7 +653,7 @@ padding: 15vh 10vh 5vh 10vh;
         }
 
         h1{
-            font-family: 'Billie Eilish', sans-serif;
+            font-family: partial.$font-billie;
             font-size: 90px;
             font-weight:lighter;
             letter-spacing: 3px;
@@ -682,13 +661,13 @@ padding: 15vh 10vh 5vh 10vh;
         }
 
         h2{
-            font-family: 'Hey August', sans-serif;
+            font-family: partial.$font-hey-august;
             font-size: 90px;
             margin-left: 10px;
         }   
 
         p{
-            font-family: 'barlow';
+            font-family: partial.$font-barlow;
             width: 60vw;
             text-align: left;
             font-size: 25px;
@@ -733,6 +712,14 @@ padding: 15vh 10vh 5vh 10vh;
 
  }
 
+  /* NY SIDE: Styling af ? */
+
+.case-sektion-1{
+    background-color: red;
+}
+
+
+
 
 /************ Mobil **************/
 
@@ -772,7 +759,7 @@ padding: 15vh 10vh 5vh 10vh;
         max-width: 100vw;
         
             h1{
-                font-family: 'Billie Eilish', sans-serif;
+                font-family: partial.$font-billie;
                 font-size: 3em;
                 font-weight: lighter;
                 letter-spacing: 3px;
@@ -780,12 +767,12 @@ padding: 15vh 10vh 5vh 10vh;
             }
         
             h2{
-                font-family: 'Hey August', sans-serif;
+                font-family: partial.$font-hey-august;
                 font-size: 3em;
             }
         
             p{
-                font-family: 'Barlow', sans-serif;
+                font-family: partial.$font-barlow;
                 text-transform: uppercase;
                 font-size: 16px;
                 margin: 5vh 0 10vh 0;
@@ -798,7 +785,7 @@ padding: 15vh 10vh 5vh 10vh;
                 text-align: center;
         
                 h3{
-                    font-family: 'Barlow', sans-serif;
+                    font-family: partial.$font-barlow;
                     font-weight: 800;
                     font-size: 3em;
                     margin-top: 2vh;
@@ -939,15 +926,19 @@ padding: 15vh 10vh 5vh 10vh;
             
             }
         
+}
 
-        
-
-
-    
-
-
-
-
+.cta-btn { 
+    background-color: red;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-family: partial.$font-barlow;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    margin-top: 5vh;
 }
 
 
